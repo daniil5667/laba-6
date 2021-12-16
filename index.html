@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        function Vector(){
+            this.x = +prompt("Введите x");
+            this.y = +prompt("Введите y");
+            this.z = +prompt("Введите z");
+
+            this.display = function(){
+                alert("Длина вектора - " + Math.sqrt((this.x*this.x)+(this.y*this.y)+(this.z*this.z)));
+            }
+        }
+        var vector = new Vector();
+        vector.display();
+    </script>
+</body>
+</html>
